@@ -3,10 +3,10 @@
 const {
   GraphQLObjectType,
   GraphQLString,
-  GraphQLInt,
-  GraphQLFloat,
   GraphQLNonNull,
 } = require('graphql');
+
+const LocationSchema = require('./location');
 
 const PlaceSchema = new GraphQLObjectType({
   name: 'Place',
@@ -25,20 +25,10 @@ const PlaceSchema = new GraphQLObjectType({
       type: GraphQLString,
     },
     location: {
-      type: new GraphQLObjectType({
-        name: 'Location',
-        fields: {
-          lat: {
-            type: GraphQLFloat,
-          },
-          lon: {
-            type: GraphQLFloat,
-          },
-        }
-      }),
+      type: LocationSchema,
     },
     created: {
-      type: GraphQLInt,
+      type: GraphQLString,
     }
   }
 });
