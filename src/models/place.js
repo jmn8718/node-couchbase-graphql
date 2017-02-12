@@ -19,6 +19,7 @@ const PlaceModel = ottoman.model('Place', {
   }
 });
 
+// bbox = [ min Longitude , min Latitude , max Longitude , max Latitude ]
 const queryByLocation = (bbox = [0, 0, 0, 0], next) => {
   const query = couchbase.SpatialQuery.from('dev_place_by_location', 'place_by_location').bbox(bbox);
   bucket.query(query, next);
