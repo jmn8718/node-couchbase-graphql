@@ -17,7 +17,7 @@ app.use('/graphql', graphqlHTTP({
 
 // start server
 const server = app.listen(PORT, () => {
-  console.log('Listening at port', server.address().port);
+  console.log(`Server started at ${ server.address().port }`);
 });
 
 module.exports = server;

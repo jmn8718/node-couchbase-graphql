@@ -89,7 +89,7 @@ const Query = new GraphQLObjectType({
               reject(err);
             }
             resolve(place);
-          })
+          });
         });
       }
     }
