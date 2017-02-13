@@ -1,0 +1,6 @@
+{
+  "couchbase": {
+    "endpoint": "localhost:8091",
+    "bucket": "graphql"
+  }
+}

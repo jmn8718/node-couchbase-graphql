@@ -1,0 +1,25 @@
+{
+  "name": "node-couchbase-graphql",
+  "version": "0.0.1",
+  "description": "Graphql server",
+  "main": "src/index.js",
+  "repository": {
+    "url": "https://github.com/jmn8718/node-couchbase-graphql.git",
+    "type": "git"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "author": "Jose Miguel Navarro",
+  "license": "MIT",
+  "dependencies": {
+    "couchbase": "^2.3.0",
+    "express": "^4.14.1",
+    "express-graphql": "^0.6.3",
+    "graphql": "^0.9.1",
+    "ottoman": "^1.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
