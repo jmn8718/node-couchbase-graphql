@@ -59,8 +59,8 @@ const Query = new GraphQLObjectType({
         // bbox = [ min Longitude , min Latitude , max Longitude , max Latitude ]
         const bbox = [
           args.minLon,
-          args.maxLon,
           args.minLat,
+          args.maxLon,
           args.maxLat,
         ];
         return new Promise((resolve, reject) => {

@@ -281,12 +281,6 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-cors@^2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/cors/-/cors-2.8.1.tgz#6181aa56abb45a2825be3304703747ae4e9d2383"
-  dependencies:
-    vary "^1"
-
 couchbase@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/couchbase/-/couchbase-2.3.0.tgz#02b1dc2aec960403438efa96cad16bb35b457b17"
@@ -1994,7 +1988,7 @@ uuid@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
 
-vary@^1, vary@~1.1.0:
+vary@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.0.tgz#e1e5affbbd16ae768dd2674394b9ad3022653140"
 
